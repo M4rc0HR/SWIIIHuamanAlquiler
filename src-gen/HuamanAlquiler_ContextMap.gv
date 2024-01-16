@@ -1,0 +1,8 @@
+digraph "ContextMapGraph" {
+graph ["imagepath"="/tmp/GraphvizJava"]
+"GestionAlquileres" ["margin"="0.3","orientation"="331","shape"="egg","fontsize"="16","style"="bold","label"="GestionAlquileres\n","fontname"="sans-serif"]
+"GestionClientes" ["margin"="0.3","orientation"="309","shape"="egg","fontsize"="16","style"="bold","label"="GestionClientes\n","fontname"="sans-serif"]
+"GestionPagos" ["margin"="0.3","orientation"="112","shape"="egg","fontsize"="16","style"="bold","label"="GestionPagos\n","fontname"="sans-serif"]
+"GestionVehiculos" ["margin"="0.3","orientation"="68","shape"="egg","fontsize"="16","style"="bold","label"="GestionVehiculos\n","fontname"="sans-serif"]
+"Seguridad" ["margin"="0.3","orientation"="115","shape"="egg","fontsize"="16","style"="bold","label"="Seguridad\n","fontname"="sans-serif"]
+}

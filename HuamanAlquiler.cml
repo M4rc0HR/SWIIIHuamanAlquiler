@@ -1,0 +1,15 @@
+BoundedContext GestionAlquileres
+BoundedContext GestionClientes
+BoundedContext GestionVehiculos
+BoundedContext GestionPagos
+BoundedContext Seguridad
+
+
+ContextMap Alquiler_Veiculos {
+    contains GestionAlquileres, GestionClientes, GestionPagos, GestionVehiculos, Seguridad
+
+    
+
+
+
+}
