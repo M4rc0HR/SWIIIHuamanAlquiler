@@ -19,3 +19,27 @@ Es un dominio de tipo GENERICO, esto porque no proporciona un valor unico al neg
 - BoundedContext GestionVehiculos
 - BoundedContext GestionPagos
 - BoundedContext Seguridad
+
+
+## Patrones de integracion entre BoundedContext
+
+### GestionClientes y Seguridad (Anticorrupcion)
+Usa un patron de ANTICORRUPCION porque, ademas de ser segura al compartir datos (necesaria para la seguridad), se encarga de colocar una capa de traduccion para que la integridad este protegida, es decir, la seguridad se encargara de traducir la gestion de clientes.
+
+### GestionPagos y Seguridad (Anticorrupcion)
+Usa un patron de ANTICORRUPCION por la seguridad que ofrece, necesaria en procesos de Pagos, ademas de que se encarga de proteger la informacion adecuadamente por medio de su capa de traduccion.
+
+### GestionVehiculos y GestionAlquileres (Open-Host Service - Lenguaje Publicado)
+Usa un patron de Open-Host Service y Lenguaje Publicado ya que ofrece la opcion de generar una intefaz para acceder a la informacion de Vehiculos y determinar los datos necesarios para su posterior alquiler, ademas de contar con un lenguaje publicado para que la comprencion del lenguaje sea más eficiente.
+
+### GestionClientes y GestionPagos (Anticorrupcion)
+Usa un patron de ANTICORRUPCION por la seguridad que ofrece, necesaria en procesos de Pagos, ademas de que se encarga de proteger la informacion adecuadamente de los clientes y el proceso de pago por medio de su capa de traduccion.
+
+### GestionAlquileres y GestionPagos (Anticorrupcion)
+Usa un patron de ANTICORRUPCION por la seguridad que ofrece, necesaria en procesos de Pagos, ademas de que se encarga de proteger la informacion adecuadamente de los Alquileres relizadas por el negocio por medio de su capa de traduccion.
+
+### GestionClientes y GestionAlquileres (Open-Host Service)
+Usa un patron de Open-Host Service, ya que ofrece la opcion de generar una intefaz para acceder a la informacion de Clientes y determinar los datos de los mismos para determinar el alquiler.
+
+
+

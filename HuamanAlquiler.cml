@@ -8,8 +8,12 @@ BoundedContext Seguridad
 ContextMap Alquiler_Veiculos {
     contains GestionAlquileres, GestionClientes, GestionPagos, GestionVehiculos, Seguridad
 
-    
-
+    GestionClientes [U] -> [D, ACL] Seguridad
+    GestionPagos [U] -> [D, ACL] Seguridad
+    GestionVehiculos [U, OHS, PL] -> [D] GestionAlquileres
+    GestionClientes [U] -> [D, ACL] GestionPagos
+    GestionAlquileres [U] -> [D, ACL] GestionPagos
+    GestionClientes [U, OHS] -> [D] GestionAlquileres
 
 
 }
