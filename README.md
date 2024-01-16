@@ -30,7 +30,7 @@ Usa un patron de ANTICORRUPCION porque, ademas de ser segura al compartir datos 
 Usa un patron de ANTICORRUPCION por la seguridad que ofrece, necesaria en procesos de Pagos, ademas de que se encarga de proteger la informacion adecuadamente por medio de su capa de traduccion.
 
 ### GestionAlquileres y Seguridad (Anticorrupcion)
-Usa un patron de ANTICORRUPCION por la seguridad que ofrece, necesaria epara proteger informacion sensible de los alquileres realizados por medio de su capa de traduccion.
+Usa un patron de ANTICORRUPCION por la seguridad que ofrece, necesaria epara proteger informacion confidencial de los alquileres realizados por medio de su capa de traduccion.
 
 ### GestionVehiculos y GestionAlquileres (Open-Host Service - Lenguaje Publicado)
 Usa un patron de Open-Host Service y Lenguaje Publicado ya que ofrece la opcion de generar una intefaz para acceder a la informacion de Vehiculos y determinar los datos necesarios para su posterior alquiler, ademas de contar con un lenguaje publicado para que la comprencion del lenguaje sea más eficiente.
@@ -45,4 +45,4 @@ Usa un patron de ANTICORRUPCION por la seguridad que ofrece, necesaria en proces
 Usa un patron de Open-Host Service, ya que ofrece la opcion de generar una intefaz para acceder a la informacion de Clientes y determinar los datos de los mismos para determinar el alquiler.
 
 
-
+![alt](src-gen/HuamanAlquiler_ContextMap.png)
