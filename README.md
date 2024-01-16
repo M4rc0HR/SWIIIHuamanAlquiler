@@ -45,4 +45,6 @@ Usa un patron de ANTICORRUPCION por la seguridad que ofrece, necesaria en proces
 Usa un patron de Open-Host Service, ya que ofrece la opcion de generar una intefaz para acceder a la informacion de Clientes y determinar los datos de los mismos para determinar el alquiler.
 
 
+## Mapa de contexto
+
 ![alt](src-gen/HuamanAlquiler_ContextMap.png)
