@@ -15,6 +15,4 @@ ContextMap Alquiler_Veiculos {
     GestionClientes [U] -> [D, ACL] GestionPagos
     GestionAlquileres [U] -> [D, ACL] GestionPagos
     GestionClientes [U, OHS] -> [D] GestionAlquileres
-src-gen/HuamanAlquiler_ContextMap.png
-
 }
