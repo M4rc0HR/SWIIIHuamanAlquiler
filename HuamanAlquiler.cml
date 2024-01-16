@@ -10,6 +10,7 @@ ContextMap Alquiler_Veiculos {
 
     GestionClientes [U] -> [D, ACL] Seguridad
     GestionPagos [U] -> [D, ACL] Seguridad
+    GestionAlquileres [U] -> [D, ACL] Seguridad
     GestionVehiculos [U, OHS, PL] -> [D] GestionAlquileres
     GestionClientes [U] -> [D, ACL] GestionPagos
     GestionAlquileres [U] -> [D, ACL] GestionPagos
