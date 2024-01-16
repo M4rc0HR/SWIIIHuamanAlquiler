@@ -1,4 +1,4 @@
-# SWIIIHuamanAlquiler
+# SWIIIHuamanAlquiler - Huamán Reyes, Marco Humberto
 ## Identificacion de subdominos
 ### Gestion de alquileres
 Es un dominio del tipo CORE, esto porque es el giro principal del negocio que trata sobre el alquilar vehiculos a los clientes.
