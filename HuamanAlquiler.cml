@@ -1,11 +1,15 @@
-BoundedContext GestionAlquileres
-BoundedContext GestionClientes
-BoundedContext GestionVehiculos
-BoundedContext GestionPagos
-BoundedContext Seguridad
+BoundedContext GestionAlquileres implements GestionAlquileresDomain
+BoundedContext GestionClientes implements GestionClientesDomain
+BoundedContext GestionVehiculos implements GestionVehiculosDomain
+BoundedContext GestionPagos implements GestionPagosDomain 
+BoundedContext Seguridad implements SeguridadDomain
 
 
 ContextMap Alquiler_Veiculos {
+    
+    type SYSTEM_LANDSCAPE
+    state TO_BE
+
     contains GestionAlquileres, GestionClientes, GestionPagos, GestionVehiculos, Seguridad
 
     GestionClientes [U] -> [D, ACL] Seguridad
@@ -15,4 +19,24 @@ ContextMap Alquiler_Veiculos {
     GestionClientes [U] -> [D, ACL] GestionPagos
     GestionAlquileres [U] -> [D, ACL] GestionPagos
     GestionClientes [U, OHS] -> [D] GestionAlquileres
+}
+
+
+Domain Alquiler_Veiculos{
+    Subdomain GestionAlquileresDomain{
+        type = CORE_DOMAIN
+        domainVisionStatement = "Dexcripcion"
+    }
+        Subdomain GestionPagosDomain{
+        type = CORE_DOMAIN
+    }
+    Subdomain GestionClientesDomain{
+        type = SUPPORTING_DOMAIN
+    }
+    Subdomain GestionVehiculosDomain{
+        type = SUPPORTING_DOMAIN
+    }
+    Subdomain SeguridadDomain{
+        type = GENERIC_SUBDOMAIN 
+    }
 }
